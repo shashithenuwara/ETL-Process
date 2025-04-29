@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="24"
-  DTS:VersionGUID="{F23D3CF8-EC0F-4727-9D14-5B6BCBE1A541}">
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{0246CC93-0BAD-48ED-8B4C-265805464DC0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -43,6 +43,40 @@
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute DWBI Assignment_Load_DW"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{E3E651D3-19C4-4017-A587-91B0C30628CA}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute DWBI Assignment_Load_DW"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>DWBI_Assignment_Load_DW.dtsx</PackageName>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute Update_completed_txns"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{13EFBB88-BE6A-4B05-9692-705336B22CD9}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute Update_completed_txns"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>Update_completed_txns.dtsx</PackageName>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Exract author data to staging table"
       DTS:CreationName="Microsoft.Pipeline"
@@ -5494,6 +5528,22 @@
       DTS:ObjectName="Constraint 13"
       DTS:To="Package\Extract Customer address data to staging table" />
     <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 14]"
+      DTS:CreationName=""
+      DTS:DTSID="{E76C29DC-0F31-48D3-ADC6-97A6C678C076}"
+      DTS:From="Package\Extract Customer address data to staging table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 14"
+      DTS:To="Package\Execute DWBI Assignment_Load_DW" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 15]"
+      DTS:CreationName=""
+      DTS:DTSID="{9974AFB7-85FA-4BC3-AACB-C7FF824375FA}"
+      DTS:From="Package\Execute DWBI Assignment_Load_DW"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 15"
+      DTS:To="Package\Execute Update_completed_txns" />
+    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
       DTS:DTSID="{2A9EF922-0280-4AE4-BD40-32179F54F505}"
@@ -5569,7 +5619,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="236,41.6"
           Id="Package\Exract author data to staging table"
@@ -5598,6 +5648,10 @@
           Size="244,41.6"
           Id="Package\Extract country data to staging table"
           TopLeft="438.666651489559,457.259256654389" />
+        <NodeLayout
+          Size="294.4,41.6"
+          Id="Package\Extract Customer address data to staging table"
+          TopLeft="523.333304739662,1057.99999844511" />
         <NodeLayout
           Size="252.8,41.6"
           Id="Package\Extract customer data to staging table"
@@ -5776,6 +5830,40 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,18.4555556359114" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 13]"
+          TopLeft="636.162952237807,1022.11851594043">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="34.3703525018549,35.88148250468"
+              Start="0,0"
+              End="34.3703525018549,28.38148250468">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.94074125234" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.94074125234"
+                    Point2="0,17.94074125234"
+                    Point3="4,17.94074125234" />
+                  <mssgle:LineSegment
+                    End="30.3703525018549,17.94074125234" />
+                  <mssgle:CubicBezierSegment
+                    Point1="30.3703525018549,17.94074125234"
+                    Point2="34.3703525018549,17.94074125234"
+                    Point3="34.3703525018549,21.94074125234" />
+                  <mssgle:LineSegment
+                    End="34.3703525018549,28.38148250468" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6057,35 +6145,73 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="294.4,41.6"
-          Id="Package\Extract Customer address data to staging table"
-          TopLeft="523.333304739662,1057.99999844511" />
+          Size="255.2,41.6"
+          Id="Package\Execute DWBI Assignment_Load_DW"
+          TopLeft="574.733320857751,1142.59999846319" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 13]"
-          TopLeft="636.162952237807,1022.11851594043">
+          Id="Package.PrecedenceConstraints[Constraint 14]"
+          TopLeft="670.533304739662,1099.59999844511">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="34.3703525018549,35.88148250468"
+              EndConnector="31.8000161180886,43.0000000180839"
               Start="0,0"
-              End="34.3703525018549,28.38148250468">
+              End="31.8000161180886,35.5000000180839">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,13.94074125234" />
+                    End="0,17.500000009042" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,13.94074125234"
-                    Point2="0,17.94074125234"
-                    Point3="4,17.94074125234" />
+                    Point1="0,17.500000009042"
+                    Point2="0,21.500000009042"
+                    Point3="4,21.500000009042" />
                   <mssgle:LineSegment
-                    End="30.3703525018549,17.94074125234" />
+                    End="27.8000161180886,21.500000009042" />
                   <mssgle:CubicBezierSegment
-                    Point1="30.3703525018549,17.94074125234"
-                    Point2="34.3703525018549,17.94074125234"
-                    Point3="34.3703525018549,21.94074125234" />
+                    Point1="27.8000161180886,21.500000009042"
+                    Point2="31.8000161180886,21.500000009042"
+                    Point3="31.8000161180886,25.500000009042" />
                   <mssgle:LineSegment
-                    End="34.3703525018549,28.38148250468" />
+                    End="31.8000161180886,35.5000000180839" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="231.2,41.6"
+          Id="Package\Execute Update_completed_txns"
+          TopLeft="626.599988799294,1222.26666429215" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 15]"
+          TopLeft="702.333320857751,1184.19999846319">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="39.8666679415437,38.0666658289563"
+              Start="0,0"
+              End="39.8666679415437,30.5666658289563">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.0333329144781" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.0333329144781"
+                    Point2="0,19.0333329144781"
+                    Point3="4,19.0333329144781" />
+                  <mssgle:LineSegment
+                    End="35.8666679415437,19.0333329144781" />
+                  <mssgle:CubicBezierSegment
+                    Point1="35.8666679415437,19.0333329144781"
+                    Point2="39.8666679415437,19.0333329144781"
+                    Point3="39.8666679415437,23.0333329144781" />
+                  <mssgle:LineSegment
+                    End="39.8666679415437,30.5666658289563" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6728,6 +6854,96 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\Extract Customer address data to staging table">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Extract Customer address data to staging table\OLE DB Source"
+          TopLeft="162.499991121392,57.1999996022383" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Extract Customer address data to staging table\OLE DB Destination"
+          TopLeft="317.499982652566,146.466665648156" />
+        <EdgeLayout
+          Id="Package\Extract Customer address data to staging table.Paths[OLE DB Source Output]"
+          TopLeft="238.499991121392,98.7999996022384">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="164.599991531174,47.6666660459174"
+              Start="0,0"
+              End="164.599991531174,40.1666660459174">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.8333330229587" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.8333330229587"
+                    Point2="0,23.8333330229587"
+                    Point3="4,23.8333330229587" />
+                  <mssgle:LineSegment
+                    End="160.599991531174,23.8333330229587" />
+                  <mssgle:CubicBezierSegment
+                    Point1="160.599991531174,23.8333330229587"
+                    Point2="164.599991531174,23.8333330229587"
+                    Point3="164.599991531174,27.8333330229587" />
+                  <mssgle:LineSegment
+                    End="164.599991531174,40.1666660459174" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Extract Customer address data to staging table.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="269.6,41.6"
+          Id="Package\Extract Customer address data to staging table.EventHandlers[OnPreExecute]\Truncate customer_address staging table"
+          TopLeft="248.999996289611,29.9999995529652" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Customer address data to staging table\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Customer address data to staging table\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Extract customer data to staging table">
     <LayoutInfo>
       <GraphLayout
@@ -7345,93 +7561,5 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Extract Customer address data to staging table">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="152,41.6"
-          Id="Package\Extract Customer address data to staging table\OLE DB Source"
-          TopLeft="162.499991121392,57.1999996022383" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Extract Customer address data to staging table\OLE DB Destination"
-          TopLeft="317.499982652566,146.466665648156" />
-        <EdgeLayout
-          Id="Package\Extract Customer address data to staging table.Paths[OLE DB Source Output]"
-          TopLeft="238.499991121392,98.7999996022384">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="164.599991531174,47.6666660459174"
-              Start="0,0"
-              End="164.599991531174,40.1666660459174">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.8333330229587" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.8333330229587"
-                    Point2="0,23.8333330229587"
-                    Point3="4,23.8333330229587" />
-                  <mssgle:LineSegment
-                    End="160.599991531174,23.8333330229587" />
-                  <mssgle:CubicBezierSegment
-                    Point1="160.599991531174,23.8333330229587"
-                    Point2="164.599991531174,23.8333330229587"
-                    Point3="164.599991531174,27.8333330229587" />
-                  <mssgle:LineSegment
-                    End="164.599991531174,40.1666660459174" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Extract Customer address data to staging table\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Extract Customer address data to staging table\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <DtsEventHandler
-    design-time-name="Package\Extract Customer address data to staging table.EventHandlers[OnPreExecute]">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="269.6,41.6"
-          Id="Package\Extract Customer address data to staging table.EventHandlers[OnPreExecute]\Truncate customer_address staging table"
-          TopLeft="248.999996289611,29.9999995529652" />
-      </GraphLayout>
-    </LayoutInfo>
-  </DtsEventHandler>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
