@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DWBI_Assignment_Load_DW"
   DTS:PackageType="5"
-  DTS:VersionBuild="95"
-  DTS:VersionGUID="{39D53A32-FB4C-445E-A38B-AD2A9D13BFA0}">
+  DTS:VersionBuild="98"
+  DTS:VersionGUID="{3F0CA730-D4F2-4236-AA4C-9317D15831A9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3744,64 +3744,64 @@
               startId="Package\Transform and Load Book Data\Merge Join 2.Outputs[Merge Join Output]" />
             <path
               refId="Package\Transform and Load Book Data.Paths[OLE DB Source Output4]"
-              endId="Package\Transform and Load Book Data\Book_language sort.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Transform and Load Book Data\Extract from book_language staging.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Transform and Load Book Data.Paths[OLE DB Source Output2]"
-              endId="Package\Transform and Load Book Data\Book Sort.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Transform and Load Book Data\Extract from book staging.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Transform and Load Book Data.Paths[OLE DB Source Output3]"
-              endId="Package\Transform and Load Book Data\Author sort.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Transform and Load Book Data\Extract from author staging.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Transform and Load Book Data.Paths[OLE DB Source Output]"
-              endId="Package\Transform and Load Book Data\Book_author sort.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Transform and Load Book Data\Extract from book_author staging.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Transform and Load Book Data.Paths[OLE DB Source Output1]"
               endId="Package\Transform and Load Book Data\Publisher Sort.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Transform and Load Book Data\Extract from publisher staging.Outputs[OLE DB Source Output]" />
             <path
+              refId="Package\Transform and Load Book Data.Paths[OLE DB Source Output2]"
+              endId="Package\Transform and Load Book Data\Author sort.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Transform and Load Book Data\Extract from author staging.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Transform and Load Book Data.Paths[OLE DB Source Output3]"
+              endId="Package\Transform and Load Book Data\Book_author sort.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Transform and Load Book Data\Extract from book_author staging.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Transform and Load Book Data.Paths[OLE DB Source Output]"
+              endId="Package\Transform and Load Book Data\Book_language sort.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Transform and Load Book Data\Extract from book_language staging.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Transform and Load Book Data.Paths[OLE DB Source Output1]"
+              endId="Package\Transform and Load Book Data\Book Sort.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Transform and Load Book Data\Extract from book staging.Outputs[OLE DB Source Output]" />
+            <path
               refId="Package\Transform and Load Book Data.Paths[Sort Output6]"
+              endId="Package\Transform and Load Book Data\Merge Join 1.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Transform and Load Book Data\Book Sort.Outputs[Sort Output]" />
+            <path
+              refId="Package\Transform and Load Book Data.Paths[Sort Output]"
               endId="Package\Transform and Load Book Data\Merge Join 3.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Transform and Load Book Data\Merge join sort.Outputs[Sort Output]" />
             <path
-              refId="Package\Transform and Load Book Data.Paths[Sort Output]"
+              refId="Package\Transform and Load Book Data.Paths[Sort Output1]"
               endId="Package\Transform and Load Book Data\Merge Join 2.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Transform and Load Book Data\Merge join 1 sort.Outputs[Sort Output]" />
             <path
-              refId="Package\Transform and Load Book Data.Paths[Sort Output1]"
+              refId="Package\Transform and Load Book Data.Paths[Sort Output2]"
               endId="Package\Transform and Load Book Data\Merge Join 2.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Transform and Load Book Data\Book_language sort.Outputs[Sort Output]" />
             <path
-              refId="Package\Transform and Load Book Data.Paths[Sort Output2]"
+              refId="Package\Transform and Load Book Data.Paths[Sort Output3]"
               endId="Package\Transform and Load Book Data\Merge Join 1.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Transform and Load Book Data\Publisher Sort.Outputs[Sort Output]" />
             <path
-              refId="Package\Transform and Load Book Data.Paths[Sort Output3]"
+              refId="Package\Transform and Load Book Data.Paths[Sort Output4]"
               endId="Package\Transform and Load Book Data\Merge Join.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Transform and Load Book Data\Author sort.Outputs[Sort Output]" />
             <path
-              refId="Package\Transform and Load Book Data.Paths[Sort Output4]"
+              refId="Package\Transform and Load Book Data.Paths[Sort Output5]"
               endId="Package\Transform and Load Book Data\Merge Join.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Transform and Load Book Data\Book_author sort.Outputs[Sort Output]" />
-            <path
-              refId="Package\Transform and Load Book Data.Paths[Sort Output5]"
-              endId="Package\Transform and Load Book Data\Merge Join 1.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Transform and Load Book Data\Book Sort.Outputs[Sort Output]" />
             <path
               refId="Package\Transform and Load Book Data.Paths[Sort Output7]"
               endId="Package\Transform and Load Book Data\Merge Join 3.Inputs[Merge Join Left Input]"
@@ -3850,7 +3850,9 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Transform and Load Customer Data\Address Sort.Inputs[Sort Input].Columns[address_id]"
-                      cachedDataType="i4"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="address_id"
                       lineageId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].Columns[address_id]">
                       <properties>
@@ -3866,7 +3868,9 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Transform and Load Customer Data\Address Sort.Inputs[Sort Input].Columns[street_number]"
-                      cachedDataType="i4"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="street_number"
                       lineageId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].Columns[street_number]">
                       <properties>
@@ -3882,7 +3886,8 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Transform and Load Customer Data\Address Sort.Inputs[Sort Input].Columns[street_name]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="50"
                       cachedName="street_name"
                       lineageId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].Columns[street_name]">
@@ -3899,7 +3904,8 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Transform and Load Customer Data\Address Sort.Inputs[Sort Input].Columns[city]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="50"
                       cachedName="city"
                       lineageId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].Columns[city]">
@@ -3916,7 +3922,9 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Transform and Load Customer Data\Address Sort.Inputs[Sort Input].Columns[country_id]"
-                      cachedDataType="ui1"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="country_id"
                       lineageId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].Columns[country_id]">
                       <properties>
@@ -3942,7 +3950,9 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Address Sort.Outputs[Sort Output].Columns[address_id]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       lineageId="Package\Transform and Load Customer Data\Address Sort.Outputs[Sort Output].Columns[address_id]"
                       name="address_id"
                       sortKeyPosition="1">
@@ -3956,7 +3966,9 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Address Sort.Outputs[Sort Output].Columns[street_number]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       lineageId="Package\Transform and Load Customer Data\Address Sort.Outputs[Sort Output].Columns[street_number]"
                       name="street_number">
                       <properties>
@@ -3969,7 +3981,8 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Address Sort.Outputs[Sort Output].Columns[street_name]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       lineageId="Package\Transform and Load Customer Data\Address Sort.Outputs[Sort Output].Columns[street_name]"
                       name="street_name">
@@ -3983,7 +3996,8 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Address Sort.Outputs[Sort Output].Columns[city]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       lineageId="Package\Transform and Load Customer Data\Address Sort.Outputs[Sort Output].Columns[city]"
                       name="city">
@@ -3997,7 +4011,9 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Address Sort.Outputs[Sort Output].Columns[country_id]"
-                      dataType="ui1"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       lineageId="Package\Transform and Load Customer Data\Address Sort.Outputs[Sort Output].Columns[country_id]"
                       name="country_id">
                       <properties>
@@ -4038,7 +4054,9 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Transform and Load Customer Data\country sort.Inputs[Sort Input].Columns[country_id]"
-                      cachedDataType="ui1"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="country_id"
                       lineageId="Package\Transform and Load Customer Data\Extract from country staging.Outputs[OLE DB Source Output].Columns[country_id]">
                       <properties>
@@ -4054,7 +4072,8 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Transform and Load Customer Data\country sort.Inputs[Sort Input].Columns[country_name]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="50"
                       cachedName="country_name"
                       lineageId="Package\Transform and Load Customer Data\Extract from country staging.Outputs[OLE DB Source Output].Columns[country_name]">
@@ -4081,7 +4100,9 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\country sort.Outputs[Sort Output].Columns[country_id]"
-                      dataType="ui1"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       lineageId="Package\Transform and Load Customer Data\country sort.Outputs[Sort Output].Columns[country_id]"
                       name="country_id"
                       sortKeyPosition="1">
@@ -4095,7 +4116,8 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\country sort.Outputs[Sort Output].Columns[country_name]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       lineageId="Package\Transform and Load Customer Data\country sort.Outputs[Sort Output].Columns[country_name]"
                       name="country_name">
@@ -4778,25 +4800,30 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].Columns[address_id]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].ExternalColumns[address_id]"
+                      length="50"
                       lineageId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].Columns[address_id]"
                       name="address_id"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].Columns[street_number]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].ExternalColumns[street_number]"
+                      length="50"
                       lineageId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].Columns[street_number]"
                       name="street_number"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].Columns[street_name]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].ExternalColumns[street_name]"
@@ -4806,7 +4833,8 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].Columns[city]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].ExternalColumns[city]"
@@ -4816,10 +4844,12 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].Columns[country_id]"
-                      dataType="ui1"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].ExternalColumns[country_id]"
+                      length="50"
                       lineageId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].Columns[country_id]"
                       name="country_id"
                       truncationRowDisposition="FailComponent" />
@@ -4828,25 +4858,33 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].ExternalColumns[address_id]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="address_id" />
                     <externalMetadataColumn
                       refId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].ExternalColumns[street_number]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="street_number" />
                     <externalMetadataColumn
                       refId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].ExternalColumns[street_name]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="street_name" />
                     <externalMetadataColumn
                       refId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].ExternalColumns[city]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="city" />
                     <externalMetadataColumn
                       refId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output].ExternalColumns[country_id]"
-                      dataType="ui1"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="country_id" />
                   </externalMetadataColumns>
                 </output>
@@ -4857,29 +4895,37 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Error Output].Columns[address_id]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       lineageId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Error Output].Columns[address_id]"
                       name="address_id" />
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Error Output].Columns[street_number]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       lineageId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Error Output].Columns[street_number]"
                       name="street_number" />
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Error Output].Columns[street_name]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       lineageId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Error Output].Columns[street_name]"
                       name="street_name" />
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Error Output].Columns[city]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       lineageId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Error Output].Columns[city]"
                       name="city" />
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Error Output].Columns[country_id]"
-                      dataType="ui1"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       lineageId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Error Output].Columns[country_id]"
                       name="country_id" />
                     <outputColumn
@@ -4962,16 +5008,19 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Extract from country staging.Outputs[OLE DB Source Output].Columns[country_id]"
-                      dataType="ui1"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Transform and Load Customer Data\Extract from country staging.Outputs[OLE DB Source Output].ExternalColumns[country_id]"
+                      length="50"
                       lineageId="Package\Transform and Load Customer Data\Extract from country staging.Outputs[OLE DB Source Output].Columns[country_id]"
                       name="country_id"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Extract from country staging.Outputs[OLE DB Source Output].Columns[country_name]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Transform and Load Customer Data\Extract from country staging.Outputs[OLE DB Source Output].ExternalColumns[country_name]"
@@ -4984,11 +5033,14 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Transform and Load Customer Data\Extract from country staging.Outputs[OLE DB Source Output].ExternalColumns[country_id]"
-                      dataType="ui1"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="country_id" />
                     <externalMetadataColumn
                       refId="Package\Transform and Load Customer Data\Extract from country staging.Outputs[OLE DB Source Output].ExternalColumns[country_name]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="country_name" />
                   </externalMetadataColumns>
@@ -5000,12 +5052,15 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Extract from country staging.Outputs[OLE DB Source Error Output].Columns[country_id]"
-                      dataType="ui1"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       lineageId="Package\Transform and Load Customer Data\Extract from country staging.Outputs[OLE DB Source Error Output].Columns[country_id]"
                       name="country_id" />
                     <outputColumn
                       refId="Package\Transform and Load Customer Data\Extract from country staging.Outputs[OLE DB Source Error Output].Columns[country_name]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       lineageId="Package\Transform and Load Customer Data\Extract from country staging.Outputs[OLE DB Source Error Output].Columns[country_name]"
                       name="country_name" />
@@ -5825,30 +5880,38 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Transform and Load Customer Data\Merge Join 1.Inputs[Merge Join Right Input].Columns[address_id]"
-                      cachedDataType="i4"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="address_id"
                       cachedSortKeyPosition="1"
                       lineageId="Package\Transform and Load Customer Data\Address Sort.Outputs[Sort Output].Columns[address_id]" />
                     <inputColumn
                       refId="Package\Transform and Load Customer Data\Merge Join 1.Inputs[Merge Join Right Input].Columns[street_number]"
-                      cachedDataType="i4"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="street_number"
                       lineageId="Package\Transform and Load Customer Data\Address Sort.Outputs[Sort Output].Columns[street_number]" />
                     <inputColumn
                       refId="Package\Transform and Load Customer Data\Merge Join 1.Inputs[Merge Join Right Input].Columns[street_name]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="50"
                       cachedName="street_name"
                       lineageId="Package\Transform and Load Customer Data\Address Sort.Outputs[Sort Output].Columns[street_name]" />
                     <inputColumn
                       refId="Package\Transform and Load Customer Data\Merge Join 1.Inputs[Merge Join Right Input].Columns[city]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="50"
                       cachedName="city"
                       lineageId="Package\Transform and Load Customer Data\Address Sort.Outputs[Sort Output].Columns[city]" />
                     <inputColumn
                       refId="Package\Transform and Load Customer Data\Merge Join 1.Inputs[Merge Join Right Input].Columns[country_id]"
-                      cachedDataType="ui1"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="country_id"
                       lineageId="Package\Transform and Load Customer Data\Address Sort.Outputs[Sort Output].Columns[country_id]" />
                   </inputColumns>
@@ -6452,13 +6515,16 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Transform and Load Customer Data\Merge Join 2.Inputs[Merge Join Right Input].Columns[country_id]"
-                      cachedDataType="ui1"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="country_id"
                       cachedSortKeyPosition="1"
                       lineageId="Package\Transform and Load Customer Data\country sort.Outputs[Sort Output].Columns[country_id]" />
                     <inputColumn
                       refId="Package\Transform and Load Customer Data\Merge Join 2.Inputs[Merge Join Right Input].Columns[country_name]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="50"
                       cachedName="country_name"
                       lineageId="Package\Transform and Load Customer Data\country sort.Outputs[Sort Output].Columns[country_name]" />
@@ -7258,25 +7324,25 @@
               name="New Output"
               startId="Package\Transform and Load Customer Data\Slowly Changing Dimension.Outputs[New Output]" />
             <path
-              refId="Package\Transform and Load Customer Data.Paths[OLE DB Source Output]"
-              endId="Package\Transform and Load Customer Data\country sort.Inputs[Sort Input]"
+              refId="Package\Transform and Load Customer Data.Paths[OLE DB Source Output3]"
+              endId="Package\Transform and Load Customer Data\Address Sort.Inputs[Sort Input]"
               name="OLE DB Source Output"
-              startId="Package\Transform and Load Customer Data\Extract from country staging.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Transform and Load Customer Data.Paths[OLE DB Source Output1]"
-              endId="Package\Transform and Load Customer Data\Customer Address Sort.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Transform and Load Customer Data\Extract from customer address staging.Outputs[OLE DB Source Output]" />
+              startId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Transform and Load Customer Data.Paths[OLE DB Source Output2]"
               endId="Package\Transform and Load Customer Data\Customer Sort.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Transform and Load Customer Data\Extract from customer staging.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Transform and Load Customer Data.Paths[OLE DB Source Output3]"
-              endId="Package\Transform and Load Customer Data\Address Sort.Inputs[Sort Input]"
+              refId="Package\Transform and Load Customer Data.Paths[OLE DB Source Output1]"
+              endId="Package\Transform and Load Customer Data\Customer Address Sort.Inputs[Sort Input]"
               name="OLE DB Source Output"
-              startId="Package\Transform and Load Customer Data\Extract from address staging.Outputs[OLE DB Source Output]" />
+              startId="Package\Transform and Load Customer Data\Extract from customer address staging.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Transform and Load Customer Data.Paths[OLE DB Source Output]"
+              endId="Package\Transform and Load Customer Data\country sort.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Transform and Load Customer Data\Extract from country staging.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Transform and Load Customer Data.Paths[Sort Output]"
               endId="Package\Transform and Load Customer Data\Merge Join.Inputs[Merge Join Left Input]"
@@ -9937,6 +10003,14 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           Size="244,41.6"
           Id="Package\Transform and Load Customer Data"
           TopLeft="156.666658106778,129.999999095996" />
+        <NodeLayout
+          Size="224,41.6"
+          Id="Package\Transform and Load Fact Table"
+          TopLeft="331.366652233237,369.39999770383" />
+        <NodeLayout
+          Size="252.8,41.6"
+          Id="Package\Transform and Load Shipping Method"
+          TopLeft="208.333321950502,227.066665087673" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="205.766661521627,78.8666664075189">
@@ -9971,10 +10045,6 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="252.8,41.6"
-          Id="Package\Transform and Load Shipping Method"
-          TopLeft="208.333321950502,227.066665087673" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="278.666658106778,171.599999095996">
@@ -10009,10 +10079,6 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="224,41.6"
-          Id="Package\Transform and Load Fact Table"
-          TopLeft="331.366652233237,369.39999770383" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="334.733321950502,268.666665087673">
@@ -10132,7 +10198,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           Id="Package\Transform and Load Book Data\Merge join 1 sort"
           TopLeft="801.566662341191,79.733332851198" />
         <EdgeLayout
-          Id="Package\Transform and Load Book Data.Paths[OLE DB Source Output2]"
+          Id="Package\Transform and Load Book Data.Paths[OLE DB Source Output1]"
           TopLeft="331.833325911728,63.2666666968002">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10154,7 +10220,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Transform and Load Book Data.Paths[OLE DB Source Output1]"
+          Id="Package\Transform and Load Book Data.Paths[OLE DB Source Output4]"
           TopLeft="345.166659609311,132.166665964557">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10176,7 +10242,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Transform and Load Book Data.Paths[OLE DB Source Output]"
+          Id="Package\Transform and Load Book Data.Paths[OLE DB Source Output3]"
           TopLeft="369.533325775134,286.999998535514">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10390,7 +10456,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Transform and Load Book Data.Paths[Sort Output6]"
+          Id="Package\Transform and Load Book Data.Paths[Sort Output]"
           TopLeft="1000.2999864772,352.133331947194">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10424,7 +10490,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Transform and Load Book Data.Paths[Sort Output5]"
+          Id="Package\Transform and Load Book Data.Paths[Sort Output6]"
           TopLeft="536.666644993757,65.8666669318411">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10458,7 +10524,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Transform and Load Book Data.Paths[Sort Output4]"
+          Id="Package\Transform and Load Book Data.Paths[Sort Output5]"
           TopLeft="593.866653189395,286.266665521595">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10492,7 +10558,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Transform and Load Book Data.Paths[Sort Output3]"
+          Id="Package\Transform and Load Book Data.Paths[Sort Output4]"
           TopLeft="588.266651003891,359.066665015353">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10526,7 +10592,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Transform and Load Book Data.Paths[Sort Output2]"
+          Id="Package\Transform and Load Book Data.Paths[Sort Output3]"
           TopLeft="566.533316759931,130.866665973597">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10560,7 +10626,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Transform and Load Book Data.Paths[Sort Output1]"
+          Id="Package\Transform and Load Book Data.Paths[Sort Output2]"
           TopLeft="611.899983745318,215.799998716315">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10594,7 +10660,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Transform and Load Book Data.Paths[Sort Output]"
+          Id="Package\Transform and Load Book Data.Paths[Sort Output1]"
           TopLeft="883.083323931115,121.333332851198">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10616,7 +10682,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Transform and Load Book Data.Paths[OLE DB Source Output4]"
+          Id="Package\Transform and Load Book Data.Paths[OLE DB Source Output]"
           TopLeft="377.29999276052,214.933332055675">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10638,7 +10704,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Transform and Load Book Data.Paths[OLE DB Source Output3]"
+          Id="Package\Transform and Load Book Data.Paths[OLE DB Source Output2]"
           TopLeft="331.533326321509,355.899998128712">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10762,6 +10828,10 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           Id="Package\Transform and Load Customer Data\merge join sort"
           TopLeft="157.9,310.3" />
         <NodeLayout
+          Size="167.2,41.6"
+          Id="Package\Transform and Load Customer Data\OLE DB Command"
+          TopLeft="380.9,1021.5" />
+        <NodeLayout
           Size="216,41.6"
           Id="Package\Transform and Load Customer Data\Extract from customer staging"
           TopLeft="322.5,5.49999999999995" />
@@ -10774,6 +10844,10 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           Id="Package\Transform and Load Customer Data\Data Conversion"
           TopLeft="386.5,818.299999999999" />
         <NodeLayout
+          Size="208,41.6"
+          Id="Package\Transform and Load Customer Data\Slowly Changing Dimension"
+          TopLeft="360.5,919.899999999999" />
+        <NodeLayout
           Size="207.2,41.6"
           Id="Package\Transform and Load Customer Data\Extract from country staging"
           TopLeft="360.9,411.9" />
@@ -10782,13 +10856,13 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           Id="Package\Transform and Load Customer Data\Merge Join 2"
           TopLeft="395.3,615.099999999999" />
         <NodeLayout
+          Size="159.2,41.6"
+          Id="Package\Transform and Load Customer Data\Insert Destination"
+          TopLeft="160.9,1021.5" />
+        <NodeLayout
           Size="129.6,41.6"
           Id="Package\Transform and Load Customer Data\Merge Join"
           TopLeft="138.7,208.7" />
-        <NodeLayout
-          Size="208,41.6"
-          Id="Package\Transform and Load Customer Data\Slowly Changing Dimension"
-          TopLeft="360.5,919.899999999999" />
         <NodeLayout
           Size="186.4,41.6"
           Id="Package\Transform and Load Customer Data\Customer Address Sort"
@@ -10809,72 +10883,6 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           Size="138.4,41.6"
           Id="Package\Transform and Load Customer Data\Address Sort"
           TopLeft="365.3,310.3" />
-        <EdgeLayout
-          Id="Package\Transform and Load Customer Data.Paths[Merge Join Output]"
-          TopLeft="464.5,656.699999999999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
-              Start="0,0"
-              End="0,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Transform and Load Customer Data.Paths[Derived Column Output]"
-          TopLeft="464.5,758.299999999999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
-              Start="0,0"
-              End="0,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Transform and Load Customer Data.Paths[Data Conversion Output]"
-          TopLeft="464.5,859.899999999999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Transform and Load Customer Data.Paths[Sort Output5]"
           TopLeft="231.5,351.9">
@@ -11180,6 +11188,42 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Transform and Load Customer Data.Paths[New Output]"
+          TopLeft="431.166666666667,961.499999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-190.666666666667,60"
+              Start="0,0"
+              End="-190.666666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.2748091603053" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.2748091603053"
+                    Point2="0,24.2748091603053"
+                    Point3="-4,24.2748091603053" />
+                  <mssgle:LineSegment
+                    End="-186.666666666667,24.2748091603053" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-186.666666666667,24.2748091603053"
+                    Point2="-190.666666666667,24.2748091603053"
+                    Point3="-190.666666666667,28.2748091603053" />
+                  <mssgle:LineSegment
+                    End="-190.666666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-122.424720052083,29.2748091603053,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Transform and Load Customer Data.Paths[Merge Join Output2]"
           TopLeft="231.5,453.5">
           <EdgeLayout.Curve>
@@ -11247,50 +11291,72 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="159.2,41.6"
-          Id="Package\Transform and Load Customer Data\Insert Destination"
-          TopLeft="160.9,1021.5" />
         <EdgeLayout
-          Id="Package\Transform and Load Customer Data.Paths[New Output]"
-          TopLeft="431.166666666667,961.499999999999">
+          Id="Package\Transform and Load Customer Data.Paths[Merge Join Output]"
+          TopLeft="464.5,656.699999999999">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-190.666666666667,60"
+              EndConnector="0,59.9999999999999"
               Start="0,0"
-              End="-190.666666666667,52.5">
+              End="0,52.4999999999999">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2748091603053" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.2748091603053"
-                    Point2="0,24.2748091603053"
-                    Point3="-4,24.2748091603053" />
-                  <mssgle:LineSegment
-                    End="-186.666666666667,24.2748091603053" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-186.666666666667,24.2748091603053"
-                    Point2="-190.666666666667,24.2748091603053"
-                    Point3="-190.666666666667,28.2748091603053" />
-                  <mssgle:LineSegment
-                    End="-190.666666666667,52.5" />
+                    End="0,52.4999999999999" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-122.424720052083,29.2748091603053,54.1827734375,11.43359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="167.2,41.6"
-          Id="Package\Transform and Load Customer Data\OLE DB Command"
-          TopLeft="380.9,1021.5" />
+        <EdgeLayout
+          Id="Package\Transform and Load Customer Data.Paths[Derived Column Output]"
+          TopLeft="464.5,758.299999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Transform and Load Customer Data.Paths[Data Conversion Output]"
+          TopLeft="464.5,859.899999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Transform and Load Customer Data.Paths[Changing Attribute Updates Output]"
           TopLeft="497.833333333333,961.499999999999">
@@ -11358,19 +11424,6 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Transform and Load Customer Data\Extract from address staging">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Transform and Load Customer Data\Extract from country staging">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11467,138 +11520,8 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Transform and Load Shipping Method">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="152,41.6"
-          Id="Package\Transform and Load Shipping Method\OLE DB Source"
-          TopLeft="154.99999769032,67.9999989867211" />
-        <NodeLayout
-          Size="112.8,41.6"
-          Id="Package\Transform and Load Shipping Method\Lookup"
-          TopLeft="195.999997079372,157.999997645617" />
-        <EdgeLayout
-          Id="Package\Transform and Load Shipping Method.Paths[OLE DB Source Output]"
-          TopLeft="230.99999769032,109.599998986721">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="21.3999993890524,48.3999986588955"
-              Start="0,0"
-              End="21.3999993890524,40.8999986588955">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.1999993294477" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.1999993294477"
-                    Point2="0,24.1999993294477"
-                    Point3="4,24.1999993294477" />
-                  <mssgle:LineSegment
-                    End="17.3999993890524,24.1999993294477" />
-                  <mssgle:CubicBezierSegment
-                    Point1="17.3999993890524,24.1999993294477"
-                    Point2="21.3999993890524,24.1999993294477"
-                    Point3="21.3999993890524,28.1999993294477" />
-                  <mssgle:LineSegment
-                    End="21.3999993890524,40.8999986588955" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="153.6,41.6"
-          Id="Package\Transform and Load Shipping Method\Conditional Split"
-          TopLeft="215.999996781349,245.999996334314" />
-        <EdgeLayout
-          Id="Package\Transform and Load Shipping Method.Paths[Lookup Match Output]"
-          TopLeft="252.399997079372,199.599997645617">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="40.3999997019768,46.3999986886978"
-              Start="0,0"
-              End="40.3999997019768,38.8999986886978">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.1999993443489" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.1999993443489"
-                    Point2="0,23.1999993443489"
-                    Point3="4,23.1999993443489" />
-                  <mssgle:LineSegment
-                    End="36.3999997019768,23.1999993443489" />
-                  <mssgle:CubicBezierSegment
-                    Point1="36.3999997019768,23.1999993443489"
-                    Point2="40.3999997019768,23.1999993443489"
-                    Point3="40.3999997019768,27.1999993443489" />
-                  <mssgle:LineSegment
-                    End="40.3999997019768,38.8999986886978" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-27.9913868677616,28.1999993443489,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Transform and Load Shipping Method\OLE DB Destination"
-          TopLeft="322.999995186925,310.999995365739" />
-        <EdgeLayout
-          Id="Package\Transform and Load Shipping Method.Paths[Insert_New_Rows]"
-          TopLeft="292.799996781349,287.599996334314">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="115.799998405576,23.3999990314246"
-              Start="0,0"
-              End="115.799998405576,15.8999990314246">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,7.69999951571228" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,7.69999951571228"
-                    Point2="0,11.6999995157123"
-                    Point3="4,11.6999995157123" />
-                  <mssgle:LineSegment
-                    End="111.799998405576,11.6999995157123" />
-                  <mssgle:CubicBezierSegment
-                    Point1="111.799998405576,11.6999995157123"
-                    Point2="115.799998405576,11.6999995157123"
-                    Point3="115.799998405576,15.6999995157123" />
-                  <mssgle:LineSegment
-                    End="115.799998405576,15.8999990314246" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="17.3408195152879,16.6999995157123,81.118359375,10.7353515625"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Transform and Load Shipping Method\OLE DB Source">
+    design-time-name="Package\Transform and Load Customer Data\Extract from country staging">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11607,47 +11530,11 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Transform and Load Shipping Method\Lookup">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Dim_Shipping_Method]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Transform and Load Customer Data\Insert Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Transform and Load Shipping Method\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12075,25 +11962,12 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Transform and Load Fact Table\cust order source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Transform and Load Fact Table\Dim_date Lokkup">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12103,7 +11977,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12116,7 +11990,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12126,10 +12000,23 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transform and Load Fact Table\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -12139,7 +12026,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12149,7 +12036,7 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12157,7 +12044,186 @@ where [refTable].[Method_ID] = ? and [refTable].[Method_Name] = ? and [refTable]
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Transform and Load Fact Table\OLE DB Destination">
+    design-time-name="Package\Transform and Load Fact Table\cust order source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Transform and Load Shipping Method">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Transform and Load Shipping Method\OLE DB Source"
+          TopLeft="154.99999769032,67.9999989867211" />
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\Transform and Load Shipping Method\Lookup"
+          TopLeft="195.999997079372,157.999997645617" />
+        <EdgeLayout
+          Id="Package\Transform and Load Shipping Method.Paths[OLE DB Source Output]"
+          TopLeft="230.99999769032,109.599998986721">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="21.3999993890524,48.3999986588955"
+              Start="0,0"
+              End="21.3999993890524,40.8999986588955">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.1999993294477" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.1999993294477"
+                    Point2="0,24.1999993294477"
+                    Point3="4,24.1999993294477" />
+                  <mssgle:LineSegment
+                    End="17.3999993890524,24.1999993294477" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17.3999993890524,24.1999993294477"
+                    Point2="21.3999993890524,24.1999993294477"
+                    Point3="21.3999993890524,28.1999993294477" />
+                  <mssgle:LineSegment
+                    End="21.3999993890524,40.8999986588955" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\Transform and Load Shipping Method\Conditional Split"
+          TopLeft="215.999996781349,245.999996334314" />
+        <EdgeLayout
+          Id="Package\Transform and Load Shipping Method.Paths[Lookup Match Output]"
+          TopLeft="252.399997079372,199.599997645617">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="40.3999997019768,46.3999986886978"
+              Start="0,0"
+              End="40.3999997019768,38.8999986886978">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.1999993443489" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.1999993443489"
+                    Point2="0,23.1999993443489"
+                    Point3="4,23.1999993443489" />
+                  <mssgle:LineSegment
+                    End="36.3999997019768,23.1999993443489" />
+                  <mssgle:CubicBezierSegment
+                    Point1="36.3999997019768,23.1999993443489"
+                    Point2="40.3999997019768,23.1999993443489"
+                    Point3="40.3999997019768,27.1999993443489" />
+                  <mssgle:LineSegment
+                    End="40.3999997019768,38.8999986886978" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-27.9913868677616,28.1999993443489,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Transform and Load Shipping Method\OLE DB Destination"
+          TopLeft="322.999995186925,310.999995365739" />
+        <EdgeLayout
+          Id="Package\Transform and Load Shipping Method.Paths[Insert_New_Rows]"
+          TopLeft="292.799996781349,287.599996334314">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="115.799998405576,23.3999990314246"
+              Start="0,0"
+              End="115.799998405576,15.8999990314246">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.69999951571228" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.69999951571228"
+                    Point2="0,11.6999995157123"
+                    Point3="4,11.6999995157123" />
+                  <mssgle:LineSegment
+                    End="111.799998405576,11.6999995157123" />
+                  <mssgle:CubicBezierSegment
+                    Point1="111.799998405576,11.6999995157123"
+                    Point2="115.799998405576,11.6999995157123"
+                    Point3="115.799998405576,15.6999995157123" />
+                  <mssgle:LineSegment
+                    End="115.799998405576,15.8999990314246" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="17.3408195152879,16.6999995157123,81.118359375,10.7353515625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transform and Load Shipping Method\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transform and Load Shipping Method\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Dim_Shipping_Method]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transform and Load Shipping Method\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
