@@ -1,0 +1,115 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CDB3D56-9A82-6C87-CCEA-F4548C678887}|DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS.dwproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\Dim Book.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{4CDB3D56-9A82-6C87-CCEA-F4548C678887}|DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS.dwproj|solutionrelative:DWBI_Assignment_SSAS\\Dim Book.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CDB3D56-9A82-6C87-CCEA-F4548C678887}|DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS.dwproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\DWBI- Assignment DWH_Cube.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{4CDB3D56-9A82-6C87-CCEA-F4548C678887}|DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS.dwproj|solutionrelative:DWBI_Assignment_SSAS\\DWBI- Assignment DWH_Cube.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CDB3D56-9A82-6C87-CCEA-F4548C678887}|DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS.dwproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{4CDB3D56-9A82-6C87-CCEA-F4548C678887}|DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS.dwproj|solutionrelative:DWBI_Assignment_SSAS\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CDB3D56-9A82-6C87-CCEA-F4548C678887}|DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS.dwproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\Dim Shipping Method.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{4CDB3D56-9A82-6C87-CCEA-F4548C678887}|DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS.dwproj|solutionrelative:DWBI_Assignment_SSAS\\Dim Shipping Method.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CDB3D56-9A82-6C87-CCEA-F4548C678887}|DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS.dwproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\Dim Customer.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{4CDB3D56-9A82-6C87-CCEA-F4548C678887}|DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS.dwproj|solutionrelative:DWBI_Assignment_SSAS\\Dim Customer.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CDB3D56-9A82-6C87-CCEA-F4548C678887}|DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS.dwproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\DWBI- Assignment DWH_DSV.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{4CDB3D56-9A82-6C87-CCEA-F4548C678887}|DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS.dwproj|solutionrelative:DWBI_Assignment_SSAS\\DWBI- Assignment DWH_DSV.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dim Book.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\Dim Book.dim",
+              "RelativeDocumentMoniker": "DWBI_Assignment_SSAS\\Dim Book.dim",
+              "ToolTip": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\Dim Book.dim [Design]",
+              "RelativeToolTip": "DWBI_Assignment_SSAS\\Dim Book.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-30T05:10:18.198Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DWBI- Assignment DWH_Cube.cube [Design]",
+              "DocumentMoniker": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\DWBI- Assignment DWH_Cube.cube",
+              "RelativeDocumentMoniker": "DWBI_Assignment_SSAS\\DWBI- Assignment DWH_Cube.cube",
+              "ToolTip": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\DWBI- Assignment DWH_Cube.cube [Design]",
+              "RelativeToolTip": "DWBI_Assignment_SSAS\\DWBI- Assignment DWH_Cube.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-30T03:56:46.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dim Date.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\Dim Date.dim",
+              "RelativeDocumentMoniker": "DWBI_Assignment_SSAS\\Dim Date.dim",
+              "ToolTip": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\Dim Date.dim [Design]",
+              "RelativeToolTip": "DWBI_Assignment_SSAS\\Dim Date.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-30T04:33:35.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dim Shipping Method.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\Dim Shipping Method.dim",
+              "RelativeDocumentMoniker": "DWBI_Assignment_SSAS\\Dim Shipping Method.dim",
+              "ToolTip": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\Dim Shipping Method.dim [Design]",
+              "RelativeToolTip": "DWBI_Assignment_SSAS\\Dim Shipping Method.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-30T05:09:33.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dim Customer.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\Dim Customer.dim",
+              "RelativeDocumentMoniker": "DWBI_Assignment_SSAS\\Dim Customer.dim",
+              "ToolTip": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\Dim Customer.dim [Design]",
+              "RelativeToolTip": "DWBI_Assignment_SSAS\\Dim Customer.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-30T03:57:54.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DWBI- Assignment DWH_DSV.dsv [Design]",
+              "DocumentMoniker": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\DWBI- Assignment DWH_DSV.dsv",
+              "RelativeDocumentMoniker": "DWBI_Assignment_SSAS\\DWBI- Assignment DWH_DSV.dsv",
+              "ToolTip": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment_SSAS\\DWBI_Assignment_SSAS\\DWBI- Assignment DWH_DSV.dsv [Design]",
+              "RelativeToolTip": "DWBI_Assignment_SSAS\\DWBI- Assignment DWH_DSV.dsv [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-30T03:52:34.555Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

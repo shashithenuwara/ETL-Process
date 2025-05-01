@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="29"
-  DTS:VersionGUID="{A34F92ED-9BD6-41A3-8387-246D06C21BCA}">
+  DTS:VersionBuild="33"
+  DTS:VersionGUID="{341385C4-C69D-4944-B568-DAB99AC4E8C7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -164,6 +164,174 @@
               DTS:TextQualified="True"
               DTS:ObjectName="country_id"
               DTS:DTSID="{4F89138F-B661-4CC0-AF95-222228B71AE8}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{1E47F294-8F33-4588-BADD-541906CBDB4E}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\thenu\OneDrive\Documents\GitHub\ETL-Process\DWBI-Assignment1\Source\address.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address_id"
+              DTS:DTSID="{094F8D38-09F5-4CA8-8E07-0F3498C0CFEB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="street_number"
+              DTS:DTSID="{15F42621-613C-4267-BBE0-8B78A4CC942E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="street_name"
+              DTS:DTSID="{F10303D6-64CA-4A6D-8ADB-F3D793DA52E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{EA3EDF7C-8279-411E-A47F-B69A817EB29F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_id"
+              DTS:DTSID="{A6A1760C-8CE8-43F3-93F6-7AF4E9B275F8}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4A30DA03-1A89-4AAE-87E0-494A22B161B1}"
+      DTS:ObjectName="Flat File Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\thenu\OneDrive\Documents\GitHub\ETL-Process\DWBI-Assignment1\Source\address.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address_id"
+              DTS:DTSID="{D5D1954C-8F81-451F-AD3D-1C3B8D4FA966}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="street_number"
+              DTS:DTSID="{874B128C-3EEE-416D-A398-4AECE2D72D92}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="street_name"
+              DTS:DTSID="{91589985-8BEE-4754-A0AF-BE545B411AD6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{D5612605-3A82-4D26-BFEF-9093ED287B02}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_id"
+              DTS:DTSID="{BD3012DA-670E-46D6-B92A-BB46AE323C62}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 4]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E3EFB071-0091-41A0-8EE7-52451B38803B}"
+      DTS:ObjectName="Flat File Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\thenu\OneDrive\Documents\GitHub\ETL-Process\DWBI-Assignment1\Source\country.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_id"
+              DTS:DTSID="{5D1EA567-7A9D-49FF-9261-2FBFF3E177E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_name"
+              DTS:DTSID="{8BAA0628-2733-4D02-8BE4-CA52AA0752E0}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -583,6 +751,211 @@
           version="1">
           <components>
             <component
+              refId="Package\Extract address data to staging table\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Extract address data to staging table\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[address_id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address_id]"
+                      length="50"
+                      lineageId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[address_id]"
+                      name="address_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[street_number]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[street_number]"
+                      length="50"
+                      lineageId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[street_number]"
+                      name="street_number"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[street_name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[street_name]"
+                      length="50"
+                      lineageId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[street_name]"
+                      name="street_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
+                      length="50"
+                      lineageId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[city]"
+                      name="city"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[country_id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_id]"
+                      length="50"
+                      lineageId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[country_id]"
+                      name="country_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="address_id" />
+                    <externalMetadataColumn
+                      refId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[street_number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="street_number" />
+                    <externalMetadataColumn
+                      refId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[street_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="street_name" />
+                    <externalMetadataColumn
+                      refId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country_id" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Extract address data to staging table\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -656,60 +1029,76 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[address_id]"
-                      cachedDataType="i4"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="address_id"
                       externalMetadataColumnId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address_id]"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[address_id]" />
+                      lineageId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[address_id]" />
                     <inputColumn
                       refId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[street_number]"
-                      cachedDataType="i4"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="street_number"
                       externalMetadataColumnId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[street_number]"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[street_number]" />
+                      lineageId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[street_number]" />
                     <inputColumn
                       refId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[street_name]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="50"
                       cachedName="street_name"
                       externalMetadataColumnId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[street_name]"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[street_name]" />
+                      lineageId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[street_name]" />
                     <inputColumn
                       refId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[city]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="50"
                       cachedName="city"
                       externalMetadataColumnId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[city]"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[city]" />
+                      lineageId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[city]" />
                     <inputColumn
                       refId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[country_id]"
-                      cachedDataType="ui1"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="country_id"
                       externalMetadataColumnId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_id]"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[country_id]" />
+                      lineageId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[country_id]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address_id]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="address_id" />
                     <externalMetadataColumn
                       refId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[street_number]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="street_number" />
                     <externalMetadataColumn
                       refId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[street_name]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="street_name" />
                     <externalMetadataColumn
                       refId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[city]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="city" />
                     <externalMetadataColumn
                       refId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_id]"
-                      dataType="ui1"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="country_id" />
                   </externalMetadataColumns>
                 </input>
@@ -739,197 +1128,13 @@
                 </output>
               </outputs>
             </component>
-            <component
-              refId="Package\Extract address data to staging table\OLE DB Source"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-              description="OLE DB Source"
-              name="OLE DB Source"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[address]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Extract address data to staging table\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-JE67G6H\SQLEXPRESS.DWBI-AssignmentSourceDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-JE67G6H\SQLEXPRESS.DWBI-AssignmentSourceDB]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output]"
-                  name="OLE DB Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[address_id]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[address_id]"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[address_id]"
-                      name="address_id"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[street_number]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[street_number]"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[street_number]"
-                      name="street_number"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[street_name]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[street_name]"
-                      length="50"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[street_name]"
-                      name="street_name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[city]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[city]"
-                      length="50"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[city]"
-                      name="city"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[country_id]"
-                      dataType="ui1"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[country_id]"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[country_id]"
-                      name="country_id"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[address_id]"
-                      dataType="i4"
-                      name="address_id" />
-                    <externalMetadataColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[street_number]"
-                      dataType="i4"
-                      name="street_number" />
-                    <externalMetadataColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[street_name]"
-                      dataType="wstr"
-                      length="50"
-                      name="street_name" />
-                    <externalMetadataColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[city]"
-                      dataType="wstr"
-                      length="50"
-                      name="city" />
-                    <externalMetadataColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[country_id]"
-                      dataType="ui1"
-                      name="country_id" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output]"
-                  isErrorOut="true"
-                  name="OLE DB Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[address_id]"
-                      dataType="i4"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[address_id]"
-                      name="address_id" />
-                    <outputColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[street_number]"
-                      dataType="i4"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[street_number]"
-                      name="street_number" />
-                    <outputColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[street_name]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[street_name]"
-                      name="street_name" />
-                    <outputColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[city]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[city]"
-                      name="city" />
-                    <outputColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[country_id]"
-                      dataType="ui1"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[country_id]"
-                      name="country_id" />
-                    <outputColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
           </components>
           <paths>
             <path
-              refId="Package\Extract address data to staging table.Paths[OLE DB Source Output]"
+              refId="Package\Extract address data to staging table.Paths[Flat File Source Output]"
               endId="Package\Extract address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input]"
-              name="OLE DB Source Output"
-              startId="Package\Extract address data to staging table\OLE DB Source.Outputs[OLE DB Source Output]" />
+              name="Flat File Source Output"
+              startId="Package\Extract address data to staging table\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -2460,6 +2665,127 @@
           version="1">
           <components>
             <component
+              refId="Package\Extract country data to staging table\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Extract country data to staging table\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 4]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[country_id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_id]"
+                      length="50"
+                      lineageId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[country_id]"
+                      name="country_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[country_name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_name]"
+                      length="50"
+                      lineageId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[country_name]"
+                      name="country_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country_id" />
+                    <externalMetadataColumn
+                      refId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country_name" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Extract country data to staging table\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -2533,27 +2859,33 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Extract country data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[country_id]"
-                      cachedDataType="ui1"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="country_id"
                       externalMetadataColumnId="Package\Extract country data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_id]"
-                      lineageId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[country_id]" />
+                      lineageId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[country_id]" />
                     <inputColumn
                       refId="Package\Extract country data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[country_name]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="50"
                       cachedName="country_name"
                       externalMetadataColumnId="Package\Extract country data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_name]"
-                      lineageId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[country_name]" />
+                      lineageId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[country_name]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Extract country data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_id]"
-                      dataType="ui1"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="country_id" />
                     <externalMetadataColumn
                       refId="Package\Extract country data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_name]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="country_name" />
                   </externalMetadataColumns>
@@ -2584,140 +2916,13 @@
                 </output>
               </outputs>
             </component>
-            <component
-              refId="Package\Extract country data to staging table\OLE DB Source"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-              description="OLE DB Source"
-              name="OLE DB Source"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[country]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Extract country data to staging table\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-JE67G6H\SQLEXPRESS.DWBI-AssignmentSourceDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-JE67G6H\SQLEXPRESS.DWBI-AssignmentSourceDB]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Output]"
-                  name="OLE DB Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[country_id]"
-                      dataType="ui1"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[country_id]"
-                      lineageId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[country_id]"
-                      name="country_id"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[country_name]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[country_name]"
-                      length="50"
-                      lineageId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[country_name]"
-                      name="country_name"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[country_id]"
-                      dataType="ui1"
-                      name="country_id" />
-                    <externalMetadataColumn
-                      refId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[country_name]"
-                      dataType="wstr"
-                      length="50"
-                      name="country_name" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output]"
-                  isErrorOut="true"
-                  name="OLE DB Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[country_id]"
-                      dataType="ui1"
-                      lineageId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[country_id]"
-                      name="country_id" />
-                    <outputColumn
-                      refId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[country_name]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[country_name]"
-                      name="country_name" />
-                    <outputColumn
-                      refId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
           </components>
           <paths>
             <path
-              refId="Package\Extract country data to staging table.Paths[OLE DB Source Output]"
+              refId="Package\Extract country data to staging table.Paths[Flat File Source Output]"
               endId="Package\Extract country data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input]"
-              name="OLE DB Source Output"
-              startId="Package\Extract country data to staging table\OLE DB Source.Outputs[OLE DB Source Output]" />
+              name="Flat File Source Output"
+              startId="Package\Extract country data to staging table\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -2777,209 +2982,6 @@
           version="1">
           <components>
             <component
-              refId="Package\Extract Customer address data to staging table\Flat File Source"
-              componentClassID="Microsoft.FlatFileSource"
-              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Flat File Source"
-              localeId="1033"
-              name="Flat File Source"
-              usesDispositions="true"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
-                  name="FileNameColumnName"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Extract Customer address data to staging table\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
-                  name="FlatFileConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output]"
-                  name="Flat File Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[address_id]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address_id]"
-                      length="50"
-                      lineageId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[address_id]"
-                      name="address_id"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[street_number]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[street_number]"
-                      length="50"
-                      lineageId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[street_number]"
-                      name="street_number"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[street_name]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[street_name]"
-                      length="50"
-                      lineageId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[street_name]"
-                      name="street_name"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[city]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
-                      length="50"
-                      lineageId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[city]"
-                      name="city"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[country_id]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_id]"
-                      length="50"
-                      lineageId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[country_id]"
-                      name="country_id"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address_id]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="address_id" />
-                    <externalMetadataColumn
-                      refId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[street_number]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="street_number" />
-                    <externalMetadataColumn
-                      refId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[street_name]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="street_name" />
-                    <externalMetadataColumn
-                      refId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="city" />
-                    <externalMetadataColumn
-                      refId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_id]"
-                      dataType="i4"
-                      name="country_id" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Error Output]"
-                  isErrorOut="true"
-                  name="Flat File Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      codePage="1252"
-                      dataType="text"
-                      description="Flat File Source Error Output Column"
-                      lineageId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      name="Flat File Source Error Output Column" />
-                    <outputColumn
-                      refId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
               refId="Package\Extract Customer address data to staging table\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -2995,7 +2997,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[StgAddress]</property>
+                  name="OpenRowset">[StgCustomerAddress]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -3052,70 +3054,38 @@
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
+                      refId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_id]"
+                      cachedDataType="i4"
+                      cachedName="customer_id"
+                      externalMetadataColumnId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_id]"
+                      lineageId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[customer_id]" />
+                    <inputColumn
                       refId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[address_id]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="i4"
                       cachedName="address_id"
                       externalMetadataColumnId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address_id]"
-                      lineageId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[address_id]" />
+                      lineageId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[address_id]" />
                     <inputColumn
-                      refId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[street_number]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="street_number"
-                      externalMetadataColumnId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[street_number]"
-                      lineageId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[street_number]" />
-                    <inputColumn
-                      refId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[street_name]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="street_name"
-                      externalMetadataColumnId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[street_name]"
-                      lineageId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[street_name]" />
-                    <inputColumn
-                      refId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[city]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="city"
-                      externalMetadataColumnId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[city]"
-                      lineageId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[city]" />
-                    <inputColumn
-                      refId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[country_id]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="country_id"
-                      externalMetadataColumnId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_id]"
-                      lineageId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output].Columns[country_id]" />
+                      refId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[status_id]"
+                      cachedDataType="i4"
+                      cachedName="status_id"
+                      externalMetadataColumnId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[status_id]"
+                      lineageId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[status_id]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_id]"
+                      dataType="i4"
+                      name="customer_id" />
                     <externalMetadataColumn
                       refId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address_id]"
                       dataType="i4"
                       name="address_id" />
                     <externalMetadataColumn
-                      refId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[street_number]"
+                      refId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[status_id]"
                       dataType="i4"
-                      name="street_number" />
-                    <externalMetadataColumn
-                      refId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[street_name]"
-                      dataType="wstr"
-                      length="50"
-                      name="street_name" />
-                    <externalMetadataColumn
-                      refId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[city]"
-                      dataType="wstr"
-                      length="50"
-                      name="city" />
-                    <externalMetadataColumn
-                      refId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_id]"
-                      dataType="ui1"
-                      name="country_id" />
+                      name="status_id" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -3144,13 +3114,155 @@
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\Extract Customer address data to staging table\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[customer_address]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Extract Customer address data to staging table\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-JE67G6H\SQLEXPRESS.DWBI-AssignmentSourceDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-JE67G6H\SQLEXPRESS.DWBI-AssignmentSourceDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[customer_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[customer_id]"
+                      lineageId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[customer_id]"
+                      name="customer_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[address_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[address_id]"
+                      lineageId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[address_id]"
+                      name="address_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[status_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[status_id]"
+                      lineageId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].Columns[status_id]"
+                      name="status_id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[customer_id]"
+                      dataType="i4"
+                      name="customer_id" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[address_id]"
+                      dataType="i4"
+                      name="address_id" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[status_id]"
+                      dataType="i4"
+                      name="status_id" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[customer_id]"
+                      dataType="i4"
+                      lineageId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[customer_id]"
+                      name="customer_id" />
+                    <outputColumn
+                      refId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[address_id]"
+                      dataType="i4"
+                      lineageId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[address_id]"
+                      name="address_id" />
+                    <outputColumn
+                      refId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[status_id]"
+                      dataType="i4"
+                      lineageId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[status_id]"
+                      name="status_id" />
+                    <outputColumn
+                      refId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
             <path
-              refId="Package\Extract Customer address data to staging table.Paths[Flat File Source Output]"
+              refId="Package\Extract Customer address data to staging table.Paths[OLE DB Source Output]"
               endId="Package\Extract Customer address data to staging table\OLE DB Destination.Inputs[OLE DB Destination Input]"
-              name="Flat File Source Output"
-              startId="Package\Extract Customer address data to staging table\Flat File Source.Outputs[Flat File Source Output]" />
+              name="OLE DB Source Output"
+              startId="Package\Extract Customer address data to staging table\OLE DB Source.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -6545,35 +6657,35 @@
           Id="Package\Extract address data to staging table\OLE DB Destination"
           TopLeft="124.999998137355,137.99999794364" />
         <NodeLayout
-          Size="152,41.6"
-          Id="Package\Extract address data to staging table\OLE DB Source"
-          TopLeft="86.999998703599,34.9999994784594" />
+          Size="150.4,41.6"
+          Id="Package\Extract address data to staging table\Flat File Source"
+          TopLeft="56.9999991506338,40.9999993890524" />
         <EdgeLayout
-          Id="Package\Extract address data to staging table.Paths[OLE DB Source Output]"
-          TopLeft="162.999998703599,76.5999994784594">
+          Id="Package\Extract address data to staging table.Paths[Flat File Source Output]"
+          TopLeft="132.199999150634,82.5999993890524">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="47.5999994337559,61.3999984651804"
+              EndConnector="78.3999989867212,55.3999985545876"
               Start="0,0"
-              End="47.5999994337559,53.8999984651804">
+              End="78.3999989867212,47.8999985545876">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.6999992325902" />
+                    End="0,23.6999992772938" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26.6999992325902"
-                    Point2="0,30.6999992325902"
-                    Point3="4,30.6999992325902" />
+                    Point1="0,23.6999992772938"
+                    Point2="0,27.6999992772938"
+                    Point3="4,27.6999992772938" />
                   <mssgle:LineSegment
-                    End="43.5999994337559,30.6999992325902" />
+                    End="74.3999989867212,27.6999992772938" />
                   <mssgle:CubicBezierSegment
-                    Point1="43.5999994337559,30.6999992325902"
-                    Point2="47.5999994337559,30.6999992325902"
-                    Point3="47.5999994337559,34.6999992325902" />
+                    Point1="74.3999989867212,27.6999992772938"
+                    Point2="78.3999989867212,27.6999992772938"
+                    Point3="78.3999989867212,31.6999992772938" />
                   <mssgle:LineSegment
-                    End="47.5999994337559,53.8999984651804" />
+                    End="78.3999989867212,47.8999985545876" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6601,19 +6713,6 @@
   </DtsEventHandler>
   <PipelineComponentMetadata
     design-time-name="Package\Extract address data to staging table\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Extract address data to staging table\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -6991,39 +7090,39 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="152,41.6"
-          Id="Package\Extract country data to staging table\OLE DB Source"
-          TopLeft="165.999997526407,62.9999990612268" />
-        <NodeLayout
           Size="171.2,41.6"
           Id="Package\Extract country data to staging table\OLE DB Destination"
           TopLeft="195.999997079372,193.999997109175" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Extract country data to staging table\Flat File Source"
+          TopLeft="107.999998390675,71.9999989271164" />
         <EdgeLayout
-          Id="Package\Extract country data to staging table.Paths[OLE DB Source Output]"
-          TopLeft="241.999997526407,104.599999061227">
+          Id="Package\Extract country data to staging table.Paths[Flat File Source Output]"
+          TopLeft="183.199998390675,113.599998927116">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="39.5999995529652,89.3999980479479"
+              EndConnector="98.3999986886973,80.3999981820586"
               Start="0,0"
-              End="39.5999995529652,81.8999980479479">
+              End="98.3999986886973,72.8999981820586">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.699999023974" />
+                    End="0,36.1999990910293" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,40.699999023974"
-                    Point2="0,44.699999023974"
-                    Point3="4,44.699999023974" />
+                    Point1="0,36.1999990910293"
+                    Point2="0,40.1999990910293"
+                    Point3="4,40.1999990910293" />
                   <mssgle:LineSegment
-                    End="35.5999995529652,44.699999023974" />
+                    End="94.3999986886973,40.1999990910293" />
                   <mssgle:CubicBezierSegment
-                    Point1="35.5999995529652,44.699999023974"
-                    Point2="39.5999995529652,44.699999023974"
-                    Point3="39.5999995529652,48.699999023974" />
+                    Point1="94.3999986886973,40.1999990910293"
+                    Point2="98.3999986886973,40.1999990910293"
+                    Point3="98.3999986886973,44.1999990910293" />
                   <mssgle:LineSegment
-                    End="39.5999995529652,81.8999980479479" />
+                    End="98.3999986886973,72.8999981820586" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7062,58 +7161,45 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Extract country data to staging table\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Extract Customer address data to staging table">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\Extract Customer address data to staging table\Flat File Source"
-          TopLeft="169.99999071161,89.2666660459174" />
+          Size="149.6,41.6"
+          Id="Package\Extract Customer address data to staging table\OLE DB Source"
+          TopLeft="105.714285939324,25.2352940955273" />
         <NodeLayout
-          Size="171.2,41.6"
+          Size="170.4,41.6"
           Id="Package\Extract Customer address data to staging table\OLE DB Destination"
-          TopLeft="294.166650594109,184.599998716315" />
+          TopLeft="229.285714773803,149.117646928116" />
         <EdgeLayout
-          Id="Package\Extract Customer address data to staging table.Paths[Flat File Source Output]"
-          TopLeft="245.59999071161,130.866666045917">
+          Id="Package\Extract Customer address data to staging table.Paths[OLE DB Source Output]"
+          TopLeft="180.514285939324,66.8352940955273">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="134.166659882499,53.7333326703972"
+              EndConnector="133.97142883448,82.2823528325888"
               Start="0,0"
-              End="134.166659882499,46.2333326703972">
+              End="133.97142883448,74.7823528325888">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.8666663351986" />
+                    End="0,37.1411764162944" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,22.8666663351986"
-                    Point2="0,26.8666663351986"
-                    Point3="4,26.8666663351986" />
+                    Point1="0,37.1411764162944"
+                    Point2="0,41.1411764162944"
+                    Point3="4,41.1411764162944" />
                   <mssgle:LineSegment
-                    End="130.166659882499,26.8666663351986" />
+                    End="129.97142883448,41.1411764162944" />
                   <mssgle:CubicBezierSegment
-                    Point1="130.166659882499,26.8666663351986"
-                    Point2="134.166659882499,26.8666663351986"
-                    Point3="134.166659882499,30.8666663351986" />
+                    Point1="129.97142883448,41.1411764162944"
+                    Point2="133.97142883448,41.1411764162944"
+                    Point3="133.97142883448,45.1411764162944" />
                   <mssgle:LineSegment
-                    End="134.166659882499,46.2333326703972" />
+                    End="133.97142883448,74.7823528325888" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7137,6 +7223,32 @@
       </GraphLayout>
     </LayoutInfo>
   </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Customer address data to staging table\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Customer address data to staging table\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Extract customer data to staging table">
     <LayoutInfo>
@@ -7501,7 +7613,7 @@
     design-time-name="Package\Extract oredr history data to staging table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="152,41.6"
           Id="Package\Extract oredr history data to staging table\OLE DB Source"
@@ -7541,9 +7653,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7744,19 +7854,6 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Extract shipping method data to staging table\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Extract Customer address data to staging table\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

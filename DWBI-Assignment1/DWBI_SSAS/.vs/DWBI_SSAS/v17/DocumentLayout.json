@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{758B0AE2-DE13-B138-8DB5-4B0AFD3C5D9B}|DWBI_SSAS\\DWBI_SSAS.dwproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\Dim Customer.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{758B0AE2-DE13-B138-8DB5-4B0AFD3C5D9B}|DWBI_SSAS\\DWBI_SSAS.dwproj|solutionrelative:DWBI_SSAS\\Dim Customer.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{758B0AE2-DE13-B138-8DB5-4B0AFD3C5D9B}|DWBI_SSAS\\DWBI_SSAS.dwproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\Dim Book.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{758B0AE2-DE13-B138-8DB5-4B0AFD3C5D9B}|DWBI_SSAS\\DWBI_SSAS.dwproj|solutionrelative:DWBI_SSAS\\Dim Book.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{758B0AE2-DE13-B138-8DB5-4B0AFD3C5D9B}|DWBI_SSAS\\DWBI_SSAS.dwproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{758B0AE2-DE13-B138-8DB5-4B0AFD3C5D9B}|DWBI_SSAS\\DWBI_SSAS.dwproj|solutionrelative:DWBI_SSAS\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{758B0AE2-DE13-B138-8DB5-4B0AFD3C5D9B}|DWBI_SSAS\\DWBI_SSAS.dwproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\Dim Shipping Method.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{758B0AE2-DE13-B138-8DB5-4B0AFD3C5D9B}|DWBI_SSAS\\DWBI_SSAS.dwproj|solutionrelative:DWBI_SSAS\\Dim Shipping Method.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{758B0AE2-DE13-B138-8DB5-4B0AFD3C5D9B}|DWBI_SSAS\\DWBI_SSAS.dwproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\DWBI- Assignment DWH.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{758B0AE2-DE13-B138-8DB5-4B0AFD3C5D9B}|DWBI_SSAS\\DWBI_SSAS.dwproj|solutionrelative:DWBI_SSAS\\DWBI- Assignment DWH.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{758B0AE2-DE13-B138-8DB5-4B0AFD3C5D9B}|DWBI_SSAS\\DWBI_SSAS.dwproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\DWBI- Assignment DWH.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{758B0AE2-DE13-B138-8DB5-4B0AFD3C5D9B}|DWBI_SSAS\\DWBI_SSAS.dwproj|solutionrelative:DWBI_SSAS\\DWBI- Assignment DWH.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dim Customer.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\Dim Customer.dim",
+              "RelativeDocumentMoniker": "DWBI_SSAS\\Dim Customer.dim",
+              "ToolTip": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\Dim Customer.dim [Design]",
+              "RelativeToolTip": "DWBI_SSAS\\Dim Customer.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-30T11:23:01.522Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dim Book.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\Dim Book.dim",
+              "RelativeDocumentMoniker": "DWBI_SSAS\\Dim Book.dim",
+              "ToolTip": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\Dim Book.dim [Design]",
+              "RelativeToolTip": "DWBI_SSAS\\Dim Book.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-30T11:26:35.413Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dim Date.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\Dim Date.dim",
+              "RelativeDocumentMoniker": "DWBI_SSAS\\Dim Date.dim",
+              "ToolTip": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\Dim Date.dim [Design]",
+              "RelativeToolTip": "DWBI_SSAS\\Dim Date.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-30T11:24:34.613Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dim Shipping Method.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\Dim Shipping Method.dim",
+              "RelativeDocumentMoniker": "DWBI_SSAS\\Dim Shipping Method.dim",
+              "ToolTip": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\Dim Shipping Method.dim [Design]",
+              "RelativeToolTip": "DWBI_SSAS\\Dim Shipping Method.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-30T11:24:16.918Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DWBI- Assignment DWH.cube [Design]",
+              "DocumentMoniker": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\DWBI- Assignment DWH.cube",
+              "RelativeDocumentMoniker": "DWBI_SSAS\\DWBI- Assignment DWH.cube",
+              "ToolTip": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\DWBI- Assignment DWH.cube [Design]",
+              "RelativeToolTip": "DWBI_SSAS\\DWBI- Assignment DWH.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-30T11:22:51.509Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DWBI- Assignment DWH.dsv [Design]",
+              "DocumentMoniker": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\DWBI- Assignment DWH.dsv",
+              "RelativeDocumentMoniker": "DWBI_SSAS\\DWBI- Assignment DWH.dsv",
+              "ToolTip": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_SSAS\\DWBI_SSAS\\DWBI- Assignment DWH.dsv [Design]",
+              "RelativeToolTip": "DWBI_SSAS\\DWBI- Assignment DWH.dsv [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-30T11:21:33.896Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

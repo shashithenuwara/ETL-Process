@@ -2,23 +2,23 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>DWBI_Assignment1</Name>
-    <LastWriteTime>2025-04-29T17:11:29.6165257Z</LastWriteTime>
+    <LastWriteTime>2025-04-29T17:49:17.9536454Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>DWBIAssignment_load_staging.dtsx</Name>
-      <LastWriteTime>2025-04-29T17:11:28.8720883Z</LastWriteTime>
+      <LastWriteTime>2025-04-30T17:20:10.3831476Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DWBI_Assignment_Load_DW.dtsx</Name>
-      <LastWriteTime>2025-04-29T09:46:42.5982046Z</LastWriteTime>
+      <LastWriteTime>2025-05-01T13:01:09.2541541Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Update_completed_txns.dtsx</Name>
-      <LastWriteTime>2025-04-29T14:02:28.3059412Z</LastWriteTime>
+      <LastWriteTime>2025-04-30T17:46:46.1900145Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
