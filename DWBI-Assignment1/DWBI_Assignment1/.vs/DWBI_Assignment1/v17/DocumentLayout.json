@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57AFF448-8A16-9FDB-9ECA-9B96D5DB8C0A}|DWBI_Assignment1\\DWBI_Assignment1.dtproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment1\\DWBI_Assignment1\\Update_completed_txns.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{57AFF448-8A16-9FDB-9ECA-9B96D5DB8C0A}|DWBI_Assignment1\\DWBI_Assignment1.dtproj|solutionrelative:DWBI_Assignment1\\Update_completed_txns.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{57AFF448-8A16-9FDB-9ECA-9B96D5DB8C0A}|DWBI_Assignment1\\DWBI_Assignment1.dtproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment1\\DWBI_Assignment1\\DWBI_Assignment_Load_DW.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{57AFF448-8A16-9FDB-9ECA-9B96D5DB8C0A}|DWBI_Assignment1\\DWBI_Assignment1.dtproj|solutionrelative:DWBI_Assignment1\\DWBI_Assignment_Load_DW.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     },
     {
       "AbsoluteMoniker": "D:0:0:{57AFF448-8A16-9FDB-9ECA-9B96D5DB8C0A}|DWBI_Assignment1\\DWBI_Assignment1.dtproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment1\\DWBI_Assignment1\\DWBIAssignment_load_staging.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{57AFF448-8A16-9FDB-9ECA-9B96D5DB8C0A}|DWBI_Assignment1\\DWBI_Assignment1.dtproj|solutionrelative:DWBI_Assignment1\\DWBIAssignment_load_staging.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57AFF448-8A16-9FDB-9ECA-9B96D5DB8C0A}|DWBI_Assignment1\\DWBI_Assignment1.dtproj|C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment1\\DWBI_Assignment1\\Update_completed_txns.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{57AFF448-8A16-9FDB-9ECA-9B96D5DB8C0A}|DWBI_Assignment1\\DWBI_Assignment1.dtproj|solutionrelative:DWBI_Assignment1\\Update_completed_txns.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DWBI_Assignment_Load_DW.dtsx [Design]",
               "DocumentMoniker": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment1\\DWBI_Assignment1\\DWBI_Assignment_Load_DW.dtsx",
               "RelativeDocumentMoniker": "DWBI_Assignment1\\DWBI_Assignment_Load_DW.dtsx",
@@ -42,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "DWBIAssignment_load_staging.dtsx [Design]",
               "DocumentMoniker": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment1\\DWBI_Assignment1\\DWBIAssignment_load_staging.dtsx",
               "RelativeDocumentMoniker": "DWBI_Assignment1\\DWBIAssignment_load_staging.dtsx",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Update_completed_txns.dtsx [Design]",
               "DocumentMoniker": "C:\\Users\\thenu\\OneDrive\\Documents\\GitHub\\ETL-Process\\DWBI-Assignment1\\DWBI_Assignment1\\DWBI_Assignment1\\Update_completed_txns.dtsx",
               "RelativeDocumentMoniker": "DWBI_Assignment1\\Update_completed_txns.dtsx",
