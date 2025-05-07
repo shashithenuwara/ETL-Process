@@ -49,31 +49,6 @@
       <b>42</b>
     </Hash>
   </Item>
-  <Item name="Dim Shipping Method.dim">
-    <Time>638816288846210408</Time>
-    <Hash length="20">
-      <b>182</b>
-      <b>189</b>
-      <b>32</b>
-      <b>29</b>
-      <b>19</b>
-      <b>123</b>
-      <b>122</b>
-      <b>175</b>
-      <b>229</b>
-      <b>13</b>
-      <b>156</b>
-      <b>69</b>
-      <b>116</b>
-      <b>217</b>
-      <b>113</b>
-      <b>129</b>
-      <b>140</b>
-      <b>11</b>
-      <b>130</b>
-      <b>255</b>
-    </Hash>
-  </Item>
   <Item name="DWBI- Assignment DWH.ds">
     <Time>638816285829452153</Time>
     <Hash length="20">
@@ -222,6 +197,31 @@
       <b>233</b>
       <b>251</b>
       <b>39</b>
+    </Hash>
+  </Item>
+  <Item name="Dim Shipping Method.dim">
+    <Time>638816288846210408</Time>
+    <Hash length="20">
+      <b>182</b>
+      <b>189</b>
+      <b>32</b>
+      <b>29</b>
+      <b>19</b>
+      <b>123</b>
+      <b>122</b>
+      <b>175</b>
+      <b>229</b>
+      <b>13</b>
+      <b>156</b>
+      <b>69</b>
+      <b>116</b>
+      <b>217</b>
+      <b>113</b>
+      <b>129</b>
+      <b>140</b>
+      <b>11</b>
+      <b>130</b>
+      <b>255</b>
     </Hash>
   </Item>
 </Infos>
